@@ -1,0 +1,111 @@
+/* Start Globale Variable  */
+:root {
+    --Dark-Cyan: hsl(185, 75%, 39%);
+    --Dark-Blue: hsl(229, 23%, 23%);
+    --Grayish-Blue: hsl(227, 10%, 46%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+}
+/* End Globale Variable  */
+/* Start Globale Rules  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* End Globale Rules  */
+/* Start Component  */
+.components {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--Dark-Gray);
+    padding: 30px 10px;
+    text-align: center;
+}
+.component h3 {
+    font-weight: 700;
+    color: var(--Dark-Blue);
+    font-size: 18px;
+}
+
+.component p {
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* End Component  */
+/* Start  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Dark-Cyan);
+    background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: bottom 55vh right 45vw,top 55vh left 45vw;
+}
+
+.container {
+    text-align: center;
+}
+.container .card {
+    max-width: 420px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.container .card .content img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: -52px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.container .card .content .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container .card .content .info h3 {
+    font-weight: 700;
+    color: var(--Dark-Blue);
+    font-size: 18px;
+}
+
+.container .card .content .info span {
+    color: var(--Grayish-Blue);
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.container .card .content .info p {
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+/* End  */
